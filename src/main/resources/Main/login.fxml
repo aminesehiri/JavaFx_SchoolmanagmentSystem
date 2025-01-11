@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" layoutX="122.0" layoutY="78.0" prefHeight="243.0" prefWidth="355.0" style="-fx-background-color: grya;">
+         <children>
+            <Label text="Nom d'utilisateur">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></Label>
+            <TextField prefHeight="35.0" prefWidth="300.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin></TextField>
+            <Label text="Mot de passe" />
+            <TextField prefHeight="35.0" prefWidth="300.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <Button fx:id="btnconnect" mnemonicParsing="false" text="Connexion">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="30.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

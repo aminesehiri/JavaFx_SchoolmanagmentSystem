@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="390.0" prefWidth="924.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.gererutilisateurController">
+   <children>
+      <VBox layoutX="14.0" layoutY="60.0" prefHeight="259.0" prefWidth="266.0">
+         <children>
+            <Label layoutX="10.0" layoutY="20.0" text="Id" />
+            <TextField fx:id="tfid" layoutX="10.0" layoutY="55.0" prefHeight="40.0" prefWidth="250.0" />
+            <Label text="Prénom">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="tfprenom" prefHeight="40.0" prefWidth="250.0" />
+            <Label text="Nom">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="tfnom" prefHeight="40.0" prefWidth="250.0" />
+            <Label text="Date de naissance">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="tfmail" prefHeight="40.0" prefWidth="250.0" />
+            <Label text="adresse mail">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="tfnom1" layoutX="10.0" layoutY="149.0" prefHeight="40.0" prefWidth="250.0" />
+         </children></VBox>
+      <TableView fx:id="tableutilisateur" layoutX="290.0" layoutY="75.0" prefHeight="251.0" prefWidth="590.0">
+        <columns>
+          <TableColumn fx:id="idcol" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="colprenom" prefWidth="75.0" text="Prenom" />
+            <TableColumn fx:id="colnom" prefWidth="75.0" text="Nom" />
+            <TableColumn prefWidth="115.33331298828125" text="Date de naissance" />
+            <TableColumn fx:id="colmail" prefWidth="247.33331298828125" text="Adresse mail" />
+        </columns>
+      </TableView>
+      <Label layoutX="363.0" layoutY="24.0" text="Gérer les utilisateurs">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <ButtonBar layoutY="340.0" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+          <Button fx:id="btnajouter" mnemonicParsing="false" text="Ajouter" />
+            <Button fx:id="btnmodifier" layoutX="135.0" layoutY="17.0" mnemonicParsing="false" text="Modifier" />
+            <Button fx:id="btnsupprimer" layoutX="135.0" layoutY="17.0" mnemonicParsing="false" text="Supprimer" />
+        </buttons>
+      </ButtonBar>
+      <ButtonBar layoutX="649.0" layoutY="340.0" prefHeight="40.0" prefWidth="231.0">
+        <buttons>
+          <Button fx:id="btnretour" mnemonicParsing="false" onAction="#retour" text="retour" />
+            <Button fx:id="btndeconnecter" layoutX="135.0" layoutY="17.0" mnemonicParsing="false" onAction="#disconect" prefHeight="25.0" prefWidth="131.0" text="deconnection" />
+        </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>
